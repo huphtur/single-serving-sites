@@ -20,6 +20,8 @@ module.exports = function (eleventyConfig) {
     return new URL(string).hostname.replace('www.','');
   });
 
+  eleventyConfig.addFilter('values', Object.values);
+  
   return {
     dir: {
       input: 'src',
