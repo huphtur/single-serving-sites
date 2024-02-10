@@ -52,7 +52,7 @@
 
 		<main class="lg:w-1/2 bg-white p-4">
 			<ul class="space-y-6">
-				{% assign sortedsites = sites | values | sort: "launchdate" | reverse %}
+				{% assign sortedsites = sites | values | sort: "launchDate" | reverse %}
 				{% for site in sortedsites %}
 					{% unless site.hidden %}
 						<li class="shadow-hard relative flex flex-col border-2 border-black p-4 pb-2 transition-all duration-150 ease-in-out hover:bg-black hover:text-white hover:shadow-none">
@@ -61,11 +61,11 @@
 
 							<div class="flex order-first justify-between">
 								<p class="text-xs font-mono">{{ site.url | domainify }}</p>
-								<time class="font-mono text-xs tracking-tighter" datetime="{{ site.launchdate | date: " %Y-%m-%d" }}">{{ site.launchdate | date: "%b %Y" }}</time>
+								<time class="font-mono text-xs tracking-tighter" datetime="{{ site.launchDate | date: " %Y-%m-%d" }}">{{ site.launchDate | date: "%b %Y" }}</time>
 							</div>
 
-							{% if site.author_site %}
-								<p class="relative flex w-fit select-none items-center text-sm">by <a class="p-1 py-2 font-bold hover:underline hover:decoration-solid" href="{{ site.author_site }}">{{ site.author }}</a></p>
+							{% if site.authorSite %}
+								<p class="relative flex w-fit select-none items-center text-sm">by <a class="p-1 py-2 font-bold hover:underline hover:decoration-solid" href="{{ site.authorSite }}">{{ site.author }}</a></p>
 							{% elsif site.author %}
 								<p class="relative flex w-fit items-center text-sm"><span class="select-none">by</span> <span class="p-1 py-2">{{ site.author }}</span></p>
 							{% endif %}

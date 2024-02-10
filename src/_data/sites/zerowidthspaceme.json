@@ -2,7 +2,7 @@
 	"url": "https://zerowidthspace.me/",
 	"title": "ZWSP | copy a zero-width space to your clipboard",
 	"description": "A zero width space for you to copy and use.",
-	"launchdate": "2016-07-13",
+	"launchDate": "2016-07-13",
 	"author": "Chris Dzombak",
-	"author_site": "https://www.dzombak.com/"
+	"authorSite": "https://www.dzombak.com/"
 }

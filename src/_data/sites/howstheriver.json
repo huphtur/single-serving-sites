@@ -2,7 +2,7 @@
 	"url": "http://www.howstheriver.com/",
 	"title": "How's the River?",
 	"description": "Showing the current swimming conditions in the Willamette River in Portland, Oregon. ",
-	"launchdate": "2017-05-15",
+	"launchDate": "2017-05-15",
 	"author": "Ride Report",
-	"author_site": "https://www.ridereport.com/"
+	"authorSite": "https://www.ridereport.com/"
 }
