@@ -54,7 +54,7 @@
 			<ul class="space-y-6">
 				{% assign sortedsites = sites | values | sort: "launchDate" | reverse %}
 				{% for site in sortedsites %}
-					{% unless site.hidden %}
+					{% unless site.excludeFromList %}
 						<li class="shadow-hard relative flex flex-col border-2 border-black p-4 pb-2 transition-all duration-150 ease-in-out hover:bg-black hover:text-white hover:shadow-none">
 
 							<h2 class="text-balance pt-1 pb-2 text-3xl font-black leading-8 tracking-tight lg:text-5xl"><a class="after:absolute after:inset-0" href="{{ site.url }}">{{ site.title }}</a></h2>

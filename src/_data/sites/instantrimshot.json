@@ -3,5 +3,6 @@
 	"title": "Instant Rimshot",
 	"description": "If you need quick access to an ironicly-placed rimshot sound to mock your friends, or a genuinely-placed rimshot to put your great joke over the top, you've come to the right place.",
 	"launchDate": "2008-05-13",
-	"hidden": true
+	"excludeFromList": true,
+	"excludeReason": "Not SSS anymore"
 }

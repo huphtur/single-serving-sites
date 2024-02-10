@@ -3,5 +3,6 @@
 	"title": "Do Nothing for 2 Minutes",
 	"description": "I just did nothing for 2 minutes. Can you?",
 	"launchDate": "2011-02-01",
-	"hidden": true
+	"excludeFromList": true,
+	"excludeReason": "Commercial site"
 }

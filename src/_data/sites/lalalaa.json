@@ -3,5 +3,6 @@
 	"title": "Lalalaa",
 	"description": "lalalaa - the funniest site that sings its name for free",
 	"launchDate": "2007-04-29",
-	"hidden": true
+	"excludeFromList": true,
+	"excludeReason": "Missing something"
 }

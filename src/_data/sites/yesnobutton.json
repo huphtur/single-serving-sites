@@ -3,5 +3,6 @@
 	"title": "Yes No Button",
 	"description": "Yes or No Decision Maker.  The truly random Yes No Button is an online Yes No Oracle that will answer your questions with a Yes or No answer. 50-50 chance like flipping a coid.",
 	"launchDate": "2010-05-09",
-	"hidden": true
+	"excludeFromList": true,
+	"excludeReason": "Ads"
 }

@@ -2,5 +2,6 @@
 	"url": "https://sadtrombone.com/",
 	"title": "Sad Trombone",
 	"launchDate": "2008-03-01",
-	"hidden": true
+	"excludeFromList": true,
+	"excludeReason": "Ads"
 }
