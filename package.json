@@ -10,7 +10,7 @@
   "license": "MIT",
   "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.4",
+    "@11ty/eleventy": "3.0.0-alpha.5",
     "tailwindcss": "^3.4.1"
   }
 }
