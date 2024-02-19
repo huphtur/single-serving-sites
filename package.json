@@ -2,8 +2,8 @@
   "name": "single-serving-sites",
   "description": "Single-Serving Sites",
   "scripts": {
-    "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet & npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --watch",
-    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy && npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --minify"
+    "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet",
+    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "Marcel Appelman",
@@ -11,6 +11,6 @@
   "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.5",
-    "tailwindcss": "^3.4.1"
+    "list.js": "^2.3.1"
   }
 }

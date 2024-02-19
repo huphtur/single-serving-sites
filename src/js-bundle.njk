@@ -1,0 +1,14 @@
+---
+permalink: bundle.js
+---
+{% include "../node_modules/list.js/dist/list.min.js" %}
+
+var options = {
+  valueNames: [ 'domain', { name: 'launch', attr: 'datetime' }, 'title', 'author' ]
+};
+
+var userList = new List('sites', options);
+
+userList.sort("launch", {
+    order: "desc"
+})

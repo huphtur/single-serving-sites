@@ -1,0 +1,213 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	line-height: calc(1em + 0.5rem);
+}
+
+html {
+	background-color: #fff;
+	color: #000;
+}
+
+body {
+	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+h1,
+h2,
+p {
+	overflow-wrap: break-word;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+}
+
+header h1 {
+	font-size: 2.5rem
+}
+
+header p {
+	max-width: 27.5em;
+	margin: .5rem 0 1rem 0;
+}
+
+header ul {
+	display: flex;
+	gap: 2rem;
+}
+
+header a,
+header a:visited {
+	color: #fff;
+	display: flex;
+	align-items: center
+}
+
+header svg {
+	margin-right: .4rem;
+}
+
+main {
+	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+}
+
+main ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-gap: 1.5rem;
+}
+
+main ul li {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border: 2px solid #000;
+	padding: 1rem;
+	box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 1);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 200ms;
+}
+
+main li:hover {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+main ul li:hover a:link {
+	color: #FFFF00;
+}
+
+main ul li:hover a:visited {
+	color: #b6e382;
+}
+
+main ul li:hover a:active {
+	color: #ff0000;
+}
+
+main h2 {
+	padding: .2rem 0;
+}
+
+main h2 a {
+	display: flex;
+	line-height: 1.1;
+}
+
+main h2 a::after {
+	content: '';
+	position: absolute;
+	inset: 0px;
+}
+
+main code {
+	letter-spacing: -0.025rem;
+	display: flex;
+	justify-content: space-between;
+	order: -9999;
+	font-size: small;
+}
+
+main code span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+main code time {
+	white-space: nowrap;
+}
+
+main em {
+	display: block;
+	margin-top: auto;
+	padding-top: 0.75rem;
+	font-style: normal;
+}
+
+main em a {
+	position: relative;
+}
+
+main em a:hover {
+	text-decoration: underline;
+}
+
+main div {
+	padding: 0 0 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+@media (min-width: 652px) {
+	main div {
+		flex-direction: row;
+	}
+}
+
+label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+input {
+	background-color: white;
+	border: 2px solid #000;
+	padding: .25rem 1rem;
+	border-radius: 4px;
+}
+
+button {
+	background-color: white;
+	border: 2px solid #000;
+	padding: .25rem 1rem;
+	border-radius: 9999px;
+	color: black;
+	font-weight: bold;
+}
+
+button.sort:after {
+	margin-left: 0.25rem
+}
+
+button.sort.asc:after {
+	content: "↓";
+}
+
+button.sort.desc:after {
+	content: "↑";
+}
