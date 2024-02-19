@@ -1,0 +1,10 @@
+{
+	"url": "https://http.cat/",
+	"title": "HTTP Cats",
+	"description": "An API for the awesome HTTP Cats! Use it in your website to show funny error messages.",
+	"launchDate": "2015-08-28",
+	"author": "Rogério Vicente",
+	"authorSite": "http://rogeriopvl.com/",
+	"excludeFromList": true,
+	"excludeReason": "Ads"
+}

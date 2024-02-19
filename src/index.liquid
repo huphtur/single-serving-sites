@@ -48,14 +48,14 @@
 		</header>
 		<main id="sites"> 
 			<div>
-				<label for="filter">Filter the sites</label>
+				<label for="filter">Filter the list </label>
 				<input class="search" id="filter" placeholder="Filter…" autocomplete="off"/>
-				<span>
+				<p><span>Sort the list by</span>
 					<button class="sort" data-sort="domain">Domain</button>
 					<button class="sort" data-sort="launch">Date</button>
 					<button class="sort" data-sort="title">Title</button>
 					<button class="sort" data-sort="author">Author</button>
-				</span>
+				</p>
 			</div>
 			<ul class="list">
 				{%- assign sortedsites = sites | values | sort: "launchDate" | reverse -%}

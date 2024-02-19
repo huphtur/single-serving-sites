@@ -1,0 +1,10 @@
+{
+	"url": "https://ifconfig.co/",
+	"title": "What is my IP address? — ifconfig.co",
+	"description": "ifconfig.co • What is my IP address? — The best tool to find your own IP address, and information about it.",
+	"launchDate": "2013-004-23",
+	"author": "Maxmind",
+	"authorSite": "https://www.maxmind.com/",
+	"excludeFromList": true,
+	"excludeReason": "Commercial"
+}
