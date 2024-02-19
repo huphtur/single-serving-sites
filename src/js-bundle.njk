@@ -2,4 +2,7 @@
 permalink: bundle.js
 ---
 {% include "../node_modules/list.js/dist/list.min.js" %}
-const listOptions={valueNames:["domain",{name:"launch",attr:"datetime"},"title","author"]},siteList=new List("sites",listOptions);siteList.sort("launch",{order:"desc"});
+const siteList = new List('sites', {
+	valueNames: ["domain", { name: "launch", attr: "datetime" }, "title", "author"]
+});
+siteList.sort("launch", { order: "desc" });

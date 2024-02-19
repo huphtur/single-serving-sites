@@ -92,23 +92,25 @@ main ul li {
 	transition-duration: 200ms;
 }
 
-main li:hover {
-	background-color: #000;
-	color: #fff;
-	cursor: pointer;
-	box-shadow: none;
-}
+@media (hover: hover) {
+	main li:hover {
+		background-color: #000;
+		color: #fff;
+		cursor: pointer;
+		box-shadow: none;
+	}
 
-main ul li:hover a:link {
-	color: #FFFF00;
-}
+	main ul li:hover a:link {
+		color: #FFFF00;
+	}
 
-main ul li:hover a:visited {
-	color: #b6e382;
-}
+	main ul li:hover a:visited {
+		color: #b6e382;
+	}
 
-main ul li:hover a:active {
-	color: #ff0000;
+	main ul li:hover a:active {
+		color: #ff0000;
+	}
 }
 
 main h2 {
@@ -172,7 +174,8 @@ main div {
 	}
 }
 
-label, div p span {
+label,
+div p span {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -184,20 +187,47 @@ label, div p span {
 	border-width: 0;
 }
 
+main div p {
+	display: flex;
+	gap: 0.5rem
+}
+
 input {
 	background-color: white;
 	border: 2px solid #000;
 	padding: .25rem 1rem;
-	border-radius: 4px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 120ms;
+}
+
+input:focus,
+button:focus {
+	box-shadow: none;
 }
 
 button {
 	background-color: white;
 	border: 2px solid #000;
 	padding: .25rem 1rem;
-	border-radius: 9999px;
+	border-radius: 999px;
 	color: black;
 	font-weight: bold;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 120ms;
+}
+
+@media (hover: hover) {
+	button:hover {
+		background-color: #000;
+		color: #fff;
+		cursor: pointer;
+		box-shadow: none;
+	}
 }
 
 button.sort:after {

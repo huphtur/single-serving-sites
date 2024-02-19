@@ -1,7 +1,6 @@
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/bundle.css");
-  // eleventyConfig.addPassthroughCopy("src/bundle.js");
 
   // https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
