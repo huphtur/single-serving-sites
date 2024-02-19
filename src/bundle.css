@@ -1,48 +1,48 @@
 *,
-::after,
-::before {
-	box-sizing: border-box;
+:after,
+:before {
+	box-sizing: border-box
 }
 
 * {
 	margin: 0;
-	line-height: calc(1em + 0.5rem);
+	line-height: calc(1em + .5rem)
 }
 
 html {
-	background-color: #fff;
 	color: #000;
+	background-color: #fff
 }
 
 body {
-	font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+	font-family: Seravek, Gill Sans Nova, Ubuntu, Calibri, DejaVu Sans, source-sans-pro, sans-serif
 }
 
 button,
 input {
-	font: inherit;
+	font: inherit
 }
 
 h1,
 h2,
 p {
-	overflow-wrap: break-word;
+	overflow-wrap: break-word
 }
 
 a {
-	font-weight: bold;
-	text-decoration: none;
+	font-weight: 700;
+	text-decoration: none
 }
 
 ul {
-	list-style: none;
 	padding: 0;
+	list-style: none
 }
 
 header {
-	background-color: #000;
 	color: #fff;
-	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+	padding: 1rem calc(1rem + env(safe-area-inset-right))1rem calc(1rem + env(safe-area-inset-left));
+	background-color: #000
 }
 
 header h1 {
@@ -51,193 +51,193 @@ header h1 {
 
 header p {
 	max-width: 27.5em;
-	margin: .5rem 0 1rem 0;
+	margin: .5rem 0 1rem
 }
 
 header ul {
-	display: flex;
 	gap: 2rem;
+	display: flex
 }
 
 header a,
 header a:visited {
 	color: #fff;
-	display: flex;
-	align-items: center
+	align-items: center;
+	display: flex
 }
 
 header svg {
-	margin-right: .4rem;
+	margin-right: .4rem
 }
 
 main {
-	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+	padding: 1rem calc(1rem + env(safe-area-inset-right))1rem calc(1rem + env(safe-area-inset-left))
 }
 
 main ul {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	grid-gap: 1.5rem;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	display: grid
 }
 
 main ul li {
-	display: flex;
-	flex-direction: column;
-	position: relative;
 	border: 2px solid #000;
+	flex-direction: column;
 	padding: 1rem;
-	box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 1);
 	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 200ms;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	display: flex;
+	position: relative;
+	box-shadow: 6px 6px #000
 }
 
-@media (hover: hover) {
+@media (hover:hover) {
 	main li:hover {
-		background-color: #000;
 		color: #fff;
 		cursor: pointer;
 		box-shadow: none;
+		background-color: #000
 	}
 
 	main ul li:hover a:link {
-		color: #FFFF00;
+		color: #ff0
 	}
 
 	main ul li:hover a:visited {
-		color: #b6e382;
+		color: #b6e382
 	}
 
 	main ul li:hover a:active {
-		color: #ff0000;
+		color: red
 	}
 }
 
 main h2 {
-	padding: .2rem 0;
+	padding: .2rem 0
 }
 
 main h2 a {
-	display: flex;
 	line-height: 1.1;
+	display: flex
 }
 
-main h2 a::after {
-	content: '';
+main h2 a:after {
+	content: "";
 	position: absolute;
-	inset: 0px;
+	inset: 0
 }
 
 main code {
-	letter-spacing: -0.025rem;
-	display: flex;
-	justify-content: space-between;
+	letter-spacing: -.025rem;
 	order: -9999;
+	justify-content: space-between;
 	font-size: small;
+	display: flex
 }
 
 main code span {
-	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	overflow: hidden
 }
 
 main code time {
-	white-space: nowrap;
+	white-space: nowrap
 }
 
 main em {
-	display: block;
 	margin-top: auto;
-	padding-top: 0.75rem;
+	padding-top: .75rem;
 	font-style: normal;
+	display: block
 }
 
 main em a {
-	position: relative;
+	position: relative
 }
 
 main em a:hover {
-	text-decoration: underline;
+	text-decoration: underline
 }
 
 main div {
-	padding: 0 0 1rem 0;
-	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	padding: 0 0 1rem;
+	display: flex
 }
 
-@media (min-width: 652px) {
+@media (min-width:652px) {
 	main div {
-		flex-direction: row;
+		flex-direction: row
 	}
 }
 
 label,
 div p span {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
 	border-width: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	overflow: hidden
 }
 
 main div p {
-	display: flex;
-	gap: 0.5rem
+	gap: .5rem;
+	display: flex
 }
 
 input {
-	background-color: white;
+	background-color: #fff;
 	border: 2px solid #000;
-	padding: .25rem 1rem;
 	border-radius: 5px;
-	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+	padding: .25rem 1rem;
 	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 120ms;
+	transition-duration: .12s;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 3px 3px #000
 }
 
 input:focus,
 button:focus {
-	box-shadow: none;
+	box-shadow: none
 }
 
 button {
-	background-color: white;
+	color: #000;
+	background-color: #fff;
 	border: 2px solid #000;
-	padding: .25rem 1rem;
 	border-radius: 999px;
-	color: black;
-	font-weight: bold;
-	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+	padding: .25rem 1rem;
+	font-weight: 700;
 	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 120ms;
+	transition-duration: .12s;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 3px 3px #000
 }
 
-@media (hover: hover) {
+@media (hover:hover) {
 	button:hover {
-		background-color: #000;
 		color: #fff;
 		cursor: pointer;
 		box-shadow: none;
+		background-color: #000
 	}
 }
 
 button.sort:after {
-	margin-left: 0.25rem
+	margin-left: .25rem
 }
 
 button.sort.asc:after {
-	content: "↓";
+	content: "↓"
 }
 
 button.sort.desc:after {
-	content: "↑";
+	content: "↑"
 }
