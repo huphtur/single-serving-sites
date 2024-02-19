@@ -1,83 +1,83 @@
 *,
 :after,
 :before {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 * {
 	margin: 0;
-	line-height: calc(1em + .5rem)
+	line-height: calc(1em + .5rem);
 }
 
 html {
 	color: #000;
-	background-color: #fff
+	background-color: #fff;
 }
 
 body {
-	font-family: Seravek, Gill Sans Nova, Ubuntu, Calibri, DejaVu Sans, source-sans-pro, sans-serif
+	font-family: Seravek, Gill Sans Nova, Ubuntu, Calibri, DejaVu Sans, source-sans-pro, sans-serif;
 }
 
 button,
 input {
-	font: inherit
+	font: inherit;
 }
 
 h1,
 h2,
 p {
-	overflow-wrap: break-word
+	overflow-wrap: break-word;
 }
 
 a {
 	font-weight: 700;
-	text-decoration: none
+	text-decoration: none;
 }
 
 ul {
 	padding: 0;
-	list-style: none
+	list-style: none;
 }
 
 header {
 	color: #fff;
-	padding: 1rem calc(1rem + env(safe-area-inset-right))1rem calc(1rem + env(safe-area-inset-left));
-	background-color: #000
+	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+	background-color: #000;
 }
 
 header h1 {
-	font-size: 2.5rem
+	font-size: 2.5rem;
 }
 
 header p {
 	max-width: 27.5em;
-	margin: .5rem 0 1rem
+	margin: .5rem 0 1rem;
 }
 
 header ul {
 	gap: 2rem;
-	display: flex
+	display: flex;
 }
 
 header a,
 header a:visited {
 	color: #fff;
 	align-items: center;
-	display: flex
+	display: flex;
 }
 
-header svg {
-	margin-right: .4rem
+svg {
+	margin-right: .4rem;
 }
 
 main {
-	padding: 1rem calc(1rem + env(safe-area-inset-right))1rem calc(1rem + env(safe-area-inset-left))
+	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
 }
 
 main ul {
 	grid-gap: 1.5rem;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-	display: grid
+	display: grid;
 }
 
 main ul li {
@@ -89,88 +89,89 @@ main ul li {
 	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 	display: flex;
 	position: relative;
-	box-shadow: 6px 6px #000
+	box-shadow: 6px 6px #000;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
 	main li:hover {
 		color: #fff;
 		cursor: pointer;
 		box-shadow: none;
-		background-color: #000
+		background-color: #000;
 	}
 
 	main ul li:hover a:link {
-		color: #ff0
+		color: #ff0;
 	}
 
 	main ul li:hover a:visited {
-		color: #b6e382
+		color: #b6e382;
 	}
 
 	main ul li:hover a:active {
-		color: red
+		color: red;
 	}
 }
 
-main h2 {
-	padding: .2rem 0
+h2 {
+	text-wrap: balance;
+	padding: .2rem 0;
 }
 
-main h2 a {
+h2 a {
 	line-height: 1.1;
-	display: flex
+	display: flex;
 }
 
-main h2 a:after {
+h2 a:after {
 	content: "";
 	position: absolute;
-	inset: 0
+	inset: 0;
 }
 
-main code {
+code {
 	letter-spacing: -.025rem;
 	order: -9999;
 	justify-content: space-between;
 	font-size: small;
-	display: flex
+	display: flex;
 }
 
-main code span {
+code span {
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	overflow: hidden
+	overflow: hidden;
 }
 
-main code time {
-	white-space: nowrap
+time {
+	white-space: nowrap;
 }
 
-main em {
+em {
 	margin-top: auto;
 	padding-top: .75rem;
 	font-style: normal;
-	display: block
+	display: block;
 }
 
-main em a {
-	position: relative
+em a {
+	position: relative;
 }
 
-main em a:hover {
-	text-decoration: underline
+em a:hover {
+	text-decoration: underline;
 }
 
 main div {
 	flex-direction: column;
 	gap: 1rem;
 	padding: 0 0 1rem;
-	display: flex
+	display: flex;
 }
 
-@media (min-width:652px) {
+@media (min-width: 652px) {
 	main div {
-		flex-direction: row
+		flex-direction: row;
 	}
 }
 
@@ -184,12 +185,12 @@ div p span {
 	margin: -1px;
 	padding: 0;
 	position: absolute;
-	overflow: hidden
+	overflow: hidden;
 }
 
 main div p {
 	gap: .5rem;
-	display: flex
+	display: flex;
 }
 
 input {
@@ -200,12 +201,12 @@ input {
 	transition-property: all;
 	transition-duration: .12s;
 	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-	box-shadow: 3px 3px #000
+	box-shadow: 3px 3px #000;
 }
 
 input:focus,
 button:focus {
-	box-shadow: none
+	box-shadow: none;
 }
 
 button {
@@ -218,26 +219,26 @@ button {
 	transition-property: all;
 	transition-duration: .12s;
 	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-	box-shadow: 3px 3px #000
+	box-shadow: 3px 3px #000;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
 	button:hover {
 		color: #fff;
 		cursor: pointer;
 		box-shadow: none;
-		background-color: #000
+		background-color: #000;
 	}
 }
 
 button.sort:after {
-	margin-left: .25rem
+	margin-left: .25rem;
 }
 
 button.sort.asc:after {
-	content: "↓"
+	content: "↓";
 }
 
 button.sort.desc:after {
-	content: "↑"
+	content: "↑";
 }
