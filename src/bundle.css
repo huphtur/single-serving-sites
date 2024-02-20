@@ -34,7 +34,7 @@ a {
 	text-decoration: none;
 }
 
-ul {
+ol, ul {
 	padding: 0;
 	list-style: none;
 }
@@ -74,13 +74,13 @@ main {
 	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
 }
 
-main ul {
+main ol {
 	grid-gap: 1.5rem;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	display: grid;
 }
 
-main ul li {
+main ol li {
 	border: 2px solid #000;
 	flex-direction: column;
 	padding: 1rem;
@@ -100,15 +100,15 @@ main ul li {
 		background-color: #000;
 	}
 
-	main ul li:hover a:link {
+	main ol li:hover a:link {
 		color: #ff0;
 	}
 
-	main ul li:hover a:visited {
+	main ol li:hover a:visited {
 		color: #b6e382;
 	}
 
-	main ul li:hover a:active {
+	main ol li:hover a:active {
 		color: red;
 	}
 }

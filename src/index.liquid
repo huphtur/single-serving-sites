@@ -57,7 +57,7 @@
 					<button class="sort" data-sort="author">Author</button>
 				</p>
 			</div>
-			<ul class="list">
+			<ol class="list">
 				{%- assign sortedsites = sites | values | sort: "launchDate" | reverse -%}
 				{%- for site in sortedsites -%}
 				{%- unless site.excludeFromList %}
@@ -75,7 +75,7 @@
 				</li>
 				{%- endunless -%}
 				{%- endfor %}
-			</ul>
+			</ol>
 		</main>
 		<script src="/bundle.js"></script>
 	</body>
