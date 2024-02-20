@@ -1,0 +1,10 @@
+{
+	"url": "https://flexboxfroggy.com/",
+	"title": "Flexbox Froggy",
+	"description": "A game for learning CSS flexbox",
+	"launchDate": "2015-11-29",
+	"author": "Codepip",
+	"authorSite": "https://codepip.com/",
+	"excludeFromList": true,
+	"excludeReason": "Commercial site"
+}

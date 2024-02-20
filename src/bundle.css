@@ -1,0 +1,244 @@
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	line-height: calc(1em + .5rem);
+}
+
+html {
+	color: #000;
+	background-color: #fff;
+}
+
+body {
+	font-family: Seravek, Gill Sans Nova, Ubuntu, Calibri, DejaVu Sans, source-sans-pro, sans-serif;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+h1,
+h2,
+p {
+	overflow-wrap: break-word;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+header {
+	color: #fff;
+	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+	background-color: #000;
+}
+
+header h1 {
+	font-size: 2.5rem;
+}
+
+header p {
+	max-width: 27.5em;
+	margin: .5rem 0 1rem;
+}
+
+header ul {
+	gap: 2rem;
+	display: flex;
+}
+
+header a,
+header a:visited {
+	color: #fff;
+	align-items: center;
+	display: flex;
+}
+
+svg {
+	margin-right: .4rem;
+}
+
+main {
+	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
+}
+
+main ul {
+	grid-gap: 1.5rem;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	display: grid;
+}
+
+main ul li {
+	border: 2px solid #000;
+	flex-direction: column;
+	padding: 1rem;
+	transition-property: all;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	display: flex;
+	position: relative;
+	box-shadow: 6px 6px #000;
+}
+
+@media (hover: hover) {
+	main li:hover {
+		color: #fff;
+		cursor: pointer;
+		box-shadow: none;
+		background-color: #000;
+	}
+
+	main ul li:hover a:link {
+		color: #ff0;
+	}
+
+	main ul li:hover a:visited {
+		color: #b6e382;
+	}
+
+	main ul li:hover a:active {
+		color: red;
+	}
+}
+
+h2 {
+	text-wrap: balance;
+	padding: .2rem 0;
+}
+
+h2 a {
+	line-height: 1.1;
+	display: flex;
+}
+
+h2 a:after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+code {
+	letter-spacing: -.025rem;
+	order: -9999;
+	justify-content: space-between;
+	font-size: small;
+	display: flex;
+}
+
+code span {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+time {
+	white-space: nowrap;
+}
+
+em {
+	margin-top: auto;
+	padding-top: .75rem;
+	font-style: normal;
+	display: block;
+}
+
+em a {
+	position: relative;
+}
+
+em a:hover {
+	text-decoration: underline;
+}
+
+main div {
+	flex-direction: column;
+	gap: 1rem;
+	padding: 0 0 1rem;
+	display: flex;
+}
+
+@media (min-width: 652px) {
+	main div {
+		flex-direction: row;
+	}
+}
+
+label,
+div p span {
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+main div p {
+	gap: .5rem;
+	display: flex;
+}
+
+input {
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: .25rem 1rem;
+	transition-property: all;
+	transition-duration: .12s;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 3px 3px #000;
+}
+
+input:focus,
+button:focus {
+	box-shadow: none;
+}
+
+button {
+	color: #000;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 999px;
+	padding: .25rem 1rem;
+	font-weight: 700;
+	transition-property: all;
+	transition-duration: .12s;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	box-shadow: 3px 3px #000;
+}
+
+@media (hover: hover) {
+	button:hover {
+		color: #fff;
+		cursor: pointer;
+		box-shadow: none;
+		background-color: #000;
+	}
+}
+
+button.sort:after {
+	margin-left: .25rem;
+}
+
+button.sort.asc:after {
+	content: "↓";
+}
+
+button.sort.desc:after {
+	content: "↑";
+}

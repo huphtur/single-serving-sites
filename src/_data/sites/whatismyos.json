@@ -1,0 +1,8 @@
+{
+	"url": "http://www.whatismyos.info/",
+	"title": "What is my Operating System?",
+	"description": "Automatically detects your OS version and browser version as well. Full system details will be displayed by visiting the page.",
+	"launchDate": "2010-01-09",
+	"excludeFromList": true,
+	"excludeReason": "Old and irrelevant"	
+}

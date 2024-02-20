@@ -13,9 +13,10 @@ Contributors        Shiv Jha-Mathur
 |-  ,-. ,-. |-. ;-. ,-. | ,-. ,-: . . 
 |   |-' |   | | | | | | | | | | | | | 
 `-' `-' `-' ' ' ' ' `-' ' `-' `-| `-| 
-                              `-' `-'                                            
+                              `-' `-'
 
-Site Generator               Eleventy 
-CSS Framework            Tailwind CSS
+Site Generator                   11ty
 Dev Platform                   GitHub
+JavaScript                    List.js
 Deployment           Cloudflare Pages
+Editor             Visual Studio Code
