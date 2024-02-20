@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
@@ -17,6 +17,7 @@
 		<link rel="icon" href="/icon.svg" type="image/svg+xml">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="manifest" href="/manifest.webmanifest">
+		<script>document.documentElement.classList.remove("no-js");</script>
 		<link rel="stylesheet" href="/bundle.css">
 	</head>
 	<body>
@@ -47,7 +48,7 @@
 			</div>
 		</header>
 		<main id="sites"> 
-			<div>
+			<div class="lazy">
 				<label for="filter">Filter the list </label>
 				<input class="search" id="filter" type="search" placeholder="Filter…" autocomplete="off">
 				<p><span>Sort the list by</span>

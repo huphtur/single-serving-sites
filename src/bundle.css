@@ -39,6 +39,10 @@ ol, ul {
 	list-style: none;
 }
 
+.no-js .lazy {
+  display: none;
+}
+
 header {
 	color: #fff;
 	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
