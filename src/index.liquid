@@ -62,6 +62,7 @@
 				{%- assign sortedsites = sites | values | sort: "launchDate" | reverse -%}
 				{%- for site in sortedsites -%}
 				{%- unless site.excludeFromList %}
+				<!-- {%- increment counter -%} -->
 				<li>
 					<h2><a class="title" href="{{ site.url }}">{{ site.title }}</a></h2>
 					<code>
@@ -77,7 +78,8 @@
 				{%- endunless -%}
 				{%- endfor %}
 			</ol>
-		</main>
+			<small>Total sites listed: {{ counter }}. Last updated: {{ "now" | date: "%B %e, %Y" }}</small>
+			</main>
 		<script src="/bundle.js"></script>
 	</body>
 </html>

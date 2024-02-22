@@ -193,6 +193,10 @@ main div p {
 	gap: .5rem;
 	display: flex;
 }
+small {
+	display: flex;
+	padding-top: 1rem;
+}
 
 input {
 	background-color: #fff;
