@@ -141,6 +141,7 @@ code {
 code span {
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	padding-right: .5rem;
 	overflow: hidden;
 }
 
@@ -193,9 +194,10 @@ main div p {
 	gap: .5rem;
 	display: flex;
 }
+
 small {
-	display: flex;
 	padding-top: 1rem;
+	display: flex;
 }
 
 input {
