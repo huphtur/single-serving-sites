@@ -23,24 +23,19 @@ input {
 	font: inherit;
 }
 
-h1,
-h2,
-p {
-	overflow-wrap: break-word;
-}
-
 a {
 	font-weight: 700;
 	text-decoration: none;
 }
 
-ol, ul {
+ol,
+ul {
 	padding: 0;
 	list-style: none;
 }
 
 .no-js .lazy {
-  display: none;
+	display: none;
 }
 
 header {
@@ -49,8 +44,9 @@ header {
 	background-color: #000;
 }
 
-header h1 {
+h1 {
 	font-size: 2.5rem;
+	display: inline-block;
 }
 
 header p {
@@ -119,6 +115,7 @@ main ol li {
 
 h2 {
 	text-wrap: balance;
+	overflow-wrap: anywhere;
 	padding: .2rem 0;
 }
 
