@@ -2,5 +2,7 @@
 	"url": "http://www.doesthemailruntoday.com/",
 	"title": "Does the mail run today?",
 	"description": "",
-	"launchDate": "2008-03-19"
+	"launchDate": "2008-03-19",
+	"excludeFromList": true,
+	"excludeReason": "Dead"
 }
