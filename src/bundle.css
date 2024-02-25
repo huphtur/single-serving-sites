@@ -195,8 +195,23 @@ main div p {
 	display: flex;
 }
 
+.pagination {
+	gap: .5rem;
+	margin-top: 1.5rem;
+	display: flex;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default !important;
+}
+
+.pagination li:hover {
+	background-color: #fff;
+}
+
 small {
-	padding-top: 1rem;
+	margin-top: 1rem;
 	display: flex;
 }
 
@@ -216,7 +231,8 @@ button:focus {
 	box-shadow: none;
 }
 
-button {
+button,
+.pagination li:not(.disabled) a {
 	color: #000;
 	background-color: #fff;
 	border: 2px solid #000;
@@ -230,7 +246,9 @@ button {
 }
 
 @media (hover: hover) {
-	button:hover {
+
+	button:hover,
+	.pagination li:not(.disabled) a:hover {
 		color: #fff;
 		cursor: pointer;
 		box-shadow: none;
