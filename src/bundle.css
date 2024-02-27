@@ -6,26 +6,18 @@
 
 * {
 	margin: 0;
-	line-height: calc(1em + .5rem);
-}
-
-html {
-	color: #000;
-	background-color: #fff;
+	/* line-height: calc(1em + .5rem); */
 }
 
 body {
+	margin: 1rem;
 	font-family: Seravek, Gill Sans Nova, Ubuntu, Calibri, DejaVu Sans, source-sans-pro, sans-serif;
 }
 
-button,
-input {
-	font: inherit;
-}
-
 a {
-	font-weight: 700;
+	outline: none;
 	text-decoration: none;
+	font-weight: 700;
 }
 
 ol,
@@ -34,108 +26,64 @@ ul {
 	list-style: none;
 }
 
-.no-js .lazy {
-	display: none;
-}
-
-header {
-	color: #fff;
-	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
-	background-color: #000;
-}
-
-h1 {
-	font-size: 2.5rem;
-	display: inline-block;
-}
-
-header p {
-	max-width: 27.5em;
-	margin: .5rem 0 1rem;
-}
-
-header ul {
-	gap: 2rem;
-	display: flex;
-}
-
-header a,
-header a:visited {
-	color: #fff;
-	align-items: center;
-	display: flex;
-}
-
-svg {
-	margin-right: .4rem;
-}
-
-main {
-	padding: 1rem calc(1rem + env(safe-area-inset-right)) 1rem calc(1rem + env(safe-area-inset-left));
-}
-
-main ol {
-	grid-gap: 1.5rem;
-	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+ol {
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	gap: 1.5rem;
 	display: grid;
 }
 
-main ol li {
+ol li {
 	border: 2px solid #000;
 	flex-direction: column;
-	padding: 1rem;
-	transition-property: all;
-	transition-duration: .2s;
-	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 	display: flex;
-	position: relative;
-	box-shadow: 6px 6px #000;
 }
 
-@media (hover: hover) {
-	main li:hover {
-		color: #fff;
-		cursor: pointer;
-		box-shadow: none;
-		background-color: #000;
-	}
-
-	main ol li:hover a:link {
-		color: #ff0;
-	}
-
-	main ol li:hover a:visited {
-		color: #b6e382;
-	}
-
-	main ol li:hover a:active {
-		color: red;
-	}
+ol li > * + * {
+  /* margin-top: 0.75rem; */
 }
 
 h2 {
 	text-wrap: balance;
-	overflow-wrap: anywhere;
-	padding: .2rem 0;
-}
-
-h2 a {
 	line-height: 1.1;
-	display: flex;
 }
 
-h2 a:after {
-	content: "";
-	position: absolute;
-	inset: 0;
+li p {
+	order: 1;
+}
+
+li code {
+	order: 2;
+}
+
+li h2,
+.description,
+em {
+	order: 3;
+}
+
+img {
+	border-bottom: 2px solid #000;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	/* margin-top: -.75rem; */
+}
+
+ol li:hover {
+	background-color: yellow;
+	box-shadow: 0 0 0 0 3px;
 }
 
 code {
-	letter-spacing: -.025rem;
-	order: -9999;
 	justify-content: space-between;
-	font-size: small;
 	display: flex;
+	letter-spacing: -.025rem;
+	font-size: small;
+}
+
+div {
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 code span {
@@ -147,123 +95,4 @@ code span {
 
 time {
 	white-space: nowrap;
-}
-
-em {
-	margin-top: auto;
-	padding-top: .75rem;
-	font-style: normal;
-	display: block;
-}
-
-em a {
-	position: relative;
-}
-
-em a:hover {
-	text-decoration: underline;
-}
-
-main div {
-	flex-direction: column;
-	gap: 1rem;
-	padding: 0 0 1rem;
-	display: flex;
-}
-
-@media (min-width: 652px) {
-	main div {
-		flex-direction: row;
-	}
-}
-
-label,
-div p span {
-	clip: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	border-width: 0;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	position: absolute;
-	overflow: hidden;
-}
-
-main div p {
-	gap: .5rem;
-	display: flex;
-}
-
-.pagination {
-	gap: .5rem;
-	margin-top: 1.5rem;
-	display: flex;
-}
-
-.disabled {
-  pointer-events: none;
-  cursor: default !important;
-}
-
-.pagination li:hover {
-	background-color: #fff;
-}
-
-small {
-	margin-top: 1rem;
-	display: flex;
-}
-
-input {
-	background-color: #fff;
-	border: 2px solid #000;
-	border-radius: 5px;
-	padding: .25rem 1rem;
-	transition-property: all;
-	transition-duration: .12s;
-	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-	box-shadow: 3px 3px #000;
-}
-
-input:focus,
-button:focus {
-	box-shadow: none;
-}
-
-button,
-.pagination li:not(.disabled) a {
-	color: #000;
-	background-color: #fff;
-	border: 2px solid #000;
-	border-radius: 999px;
-	padding: .25rem 1rem;
-	font-weight: 700;
-	transition-property: all;
-	transition-duration: .12s;
-	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-	box-shadow: 3px 3px #000;
-}
-
-@media (hover: hover) {
-
-	button:hover,
-	.pagination li:not(.disabled) a:hover {
-		color: #fff;
-		cursor: pointer;
-		box-shadow: none;
-		background-color: #000;
-	}
-}
-
-button.sort:after {
-	margin-left: .25rem;
-}
-
-button.sort.asc:after {
-	content: "↓";
-}
-
-button.sort.desc:after {
-	content: "↑";
 }

@@ -3,8 +3,8 @@ permalink: bundle.js
 ---
 {% include "../node_modules/list.js-fixed/dist/list.min.js" %}
 const siteList = new List('sites', {
-	valueNames: ["domain", { name: "launch", attr: "datetime" }, "title", "author"],
-	page: 42,
+	valueNames: ["domain", { name: "launch", attr: "datetime" }, "title", "description", "author"],
+	page: 10,
 	pagination: true,
 });
 siteList.sort("launch", { order: "desc" });

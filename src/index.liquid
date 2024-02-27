@@ -55,6 +55,7 @@
 					<button class="sort" data-sort="domain">Domain</button>
 					<button class="sort" data-sort="launch">Date</button>
 					<button class="sort" data-sort="title">Title</button>
+					<button class="sort" data-sort="description">Description</button>
 					<button class="sort" data-sort="author">Author</button>
 				</p>
 			</div>
@@ -64,11 +65,15 @@
 				{%- unless site.excludeFromList %}
 				<!-- {%- increment counter -%} -->
 				<li>
-					<h2><a class="title" href="{{ site.url }}">{{ site.title }}</a></h2>
+					<h2><a class="title" href="{{ site.url }}">{{ site.title | truncate: 60, "…" }}</a></h2>
+					<p><img src="/images/fts.png" alt width="240"></p>
 					<code>
 						<span class="domain">{{ site.url | domainify }}</span>
 						<time class="launch" datetime="{{ site.launchDate | date: "%Y-%m-%d" }}">{{ site.launchDate | date: "%b %Y" }}</time>
 					</code>
+					{%- if site.description %}
+					<div class="description">{{ site.description | truncate: 160, "…" }}</div>
+					{%- endif %}
 					{%- if site.authorSite %}
 					<em>by <a class="author" href="{{ site.authorSite }}">{{ site.author }}</a></em>
 					{%- elsif site.author -%}

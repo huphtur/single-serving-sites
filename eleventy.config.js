@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/meta.png');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/humans.txt');
+  eleventyConfig.addPassthroughCopy('src/images');
 
   // https://huphtur.nl/eleventy-filter-to-turn-url-into-domain-name/
   eleventyConfig.addFilter("domainify", function (string) {
