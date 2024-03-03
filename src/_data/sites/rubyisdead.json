@@ -1,5 +1,6 @@
 {
 	"url": "https://rubyisdead.science/",
-	"title": "Ruby is dead | A totally legit site based on science",
+	"title": "Ruby is dead", 
+	"description": "A totally legit site based on science",
 	"launchDate": "2018-05-23"
 }

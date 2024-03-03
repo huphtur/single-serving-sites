@@ -1,6 +1,8 @@
 {
 	"url": "https://bilingualjokes.com/",
 	"title": "Bilingual Jokes",
-	"description": "",
-	"launchDate": "2021-11-27"
+	"description": "Bilingual Jokes curates jokes that require understanding in 2 languages. We hope to encourage people to learn new languages in a fun way.",
+	"launchDate": "2021-11-27",
+	"author": "Half Sugar less Ice",
+	"authorSite": "https://www.halfsugarlessice.com/"	
 }

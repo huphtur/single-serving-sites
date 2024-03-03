@@ -1,4 +1,5 @@
-module.exports = function (eleventyConfig) {
+const htmlmin = require("html-minifier-terser");
+module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/bundle.css");
 
@@ -13,6 +14,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/meta.png');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/humans.txt');
+  eleventyConfig.addPassthroughCopy('src/screenshots');
+  eleventyConfig.addPassthroughCopy('src/img');
 
   // https://huphtur.nl/eleventy-filter-to-turn-url-into-domain-name/
   eleventyConfig.addFilter("domainify", function (string) {
@@ -20,6 +23,22 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('values', Object.values);
+
+  eleventyConfig.addTransform("htmlmin", function(content) {
+    // Prior to Eleventy 2.0: use this.outputPath instead
+    if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+        minifyCSS: true,
+        minifyJS: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
 
   return {
     dir: {

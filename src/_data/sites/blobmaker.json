@@ -4,5 +4,7 @@
 	"description": "Make organic SVG shapes for your next design. Modify the complexity, contrast, and color, to generate unique SVG blobs every time.",
 	"launchDate": "2019-01-02",
 	"author": "z creative labs",
-	"authorSite": "https://zcreativelabs.com/"
+	"authorSite": "https://zcreativelabs.com/",
+	"excludeFromList": true,
+	"excludeReason": "Commercial"
 }
