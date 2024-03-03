@@ -69,7 +69,7 @@
 				<!-- {%- increment counter -%} -->
 				<li>
 					<h2><a class="title" href="{{ site.url }}">{{ site.title | truncate: 60, "…" }}</a></h2>
-					<p><img src="/img/{{ site.url | domainify }}.avif" alt width="280" height="175" loading="lazy" decoding="async"></p>
+					<p><img src="/img/{{ site.url | domainify }}.avif" alt width="280" height="175" {%- unless forloop.first -%}loading="lazy"{%- endunless -%} decoding="async"></p>
 					<code>
 						<span class="domain">{{ site.url | domainify }}</span>
 						<time class="launch" datetime="{{ site.launchDate | date: "%Y-%m-%d" }}">{{ site.launchDate | date: "%b %Y" }}</time>
