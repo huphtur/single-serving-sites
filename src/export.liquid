@@ -1,0 +1,14 @@
+---
+permalink: export.json
+---
+{%- assign sortedsites = sites | values | sort: "domain" -%}
+[
+{%- for site in sortedsites -%}
+{%- unless site.excludeFromList %}
+	{
+		"id": "{{ site.url | domainify }}",
+		"url": "{{ site.url }}"
+	}{% unless forloop.last %},{% endunless %}
+{%- endunless -%}
+{%- endfor %}
+]

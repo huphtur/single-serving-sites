@@ -18,9 +18,12 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="manifest" href="/manifest.webmanifest">
 		<script>document.documentElement.classList.remove("no-js");</script>
-		<link rel="stylesheet" href="/bundle.css">
+		<style>
+			{% include 'styles.css' %}
+		</style>
 	</head>
 	<body>
+		
 		<header>
 			<div>
 				<div>
@@ -66,7 +69,7 @@
 				<!-- {%- increment counter -%} -->
 				<li>
 					<h2><a class="title" href="{{ site.url }}">{{ site.title | truncate: 60, "…" }}</a></h2>
-					<p><img src="/images/fts.png" alt width="240"></p>
+					<p><img src="/img/{{ site.url | domainify }}.avif" alt width="280" height="175" loading="lazy" decoding="async"></p>
 					<code>
 						<span class="domain">{{ site.url | domainify }}</span>
 						<time class="launch" datetime="{{ site.launchDate | date: "%Y-%m-%d" }}">{{ site.launchDate | date: "%b %Y" }}</time>
@@ -83,9 +86,12 @@
 				{%- endunless -%}
 				{%- endfor %}
 			</ol>
-			<ul class="pagination"></ul>
+			<ul class="pagination lazy"></ul>
 			<small>{{ counter }} Total sites listed. Last updated: {{ "now" | date: "%B %e, %Y" }}.</small>
-			</main>
-		<script src="/bundle.js"></script>
+		</main>
+		<script>
+			{% include "../../../node_modules/list.js-fixed/dist/list.min.js" %}
+			{% include 'scripts.js' %}
+		</script>
 	</body>
 </html>
