@@ -261,20 +261,12 @@ main div {
 }
 
 @media (min-width: 438px) {
-	body {
-		background-color: #ff0;
-	}
-
 	ol {
 		grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 	}
 }
 
 @media (min-width: 536px) {
-	body {
-		background-color: red;
-	}
-
 	ol {
 		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 	}
@@ -285,10 +277,6 @@ main div {
 }
 
 @media (min-width: 688px) {
-	body {
-		background-color: green;
-	}
-
 	input {
 		max-width: none;
 	}
