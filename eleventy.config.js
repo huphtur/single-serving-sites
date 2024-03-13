@@ -14,7 +14,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/meta.png');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/humans.txt');
-  eleventyConfig.addPassthroughCopy('src/screenshots');
   eleventyConfig.addPassthroughCopy('src/img');
 
   // https://huphtur.nl/eleventy-filter-to-turn-url-into-domain-name/
