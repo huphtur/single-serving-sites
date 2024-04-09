@@ -3,5 +3,7 @@
 	"title": "sourcecode mirroring itself",
 	"launchDate": "2014-03-31",
 	"author": "Jan Robert Leegte",
-	"authorSite": "https://www.leegte.org/"
+	"authorSite": "https://www.leegte.org/",
+	"excludeFromList": true,
+	"excludeReason": "Dead"		
 }

@@ -4,5 +4,7 @@
 	"description": "A perky lorem ipsum generator* for the well-caffeinated.",
 	"launchDate": "2021-12-09",
 	"author": "Max VelDink",
-	"authorSite": "https://maxveld.ink/"
+	"authorSite": "https://maxveld.ink/",
+	"excludeFromList": true,
+	"excludeReason": "Dead"	
 }

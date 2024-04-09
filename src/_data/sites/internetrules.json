@@ -3,5 +3,7 @@
 	"title": "These are the rules.",
 	"launchDate": "2005-01-21",
 	"author": "Adam Fields",
-	"authorSite": "https://www.aquick.org/"
+	"authorSite": "https://www.aquick.org/",
+	"excludeFromList": true,
+	"excludeReason": "Dead"
 }
