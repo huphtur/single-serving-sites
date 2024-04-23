@@ -2,5 +2,7 @@
 	"url": "https://www.internetdown.info/",
 	"title": "Is my Internet down ?",
 	"description": "Internet Down tool checks if a website is down and unreachable or you have a network connection error. Of course the internet isn't down today! :)",
-	"launchDate": "2009-11-25"
+	"launchDate": "2009-11-25",
+	"excludeFromList": true,
+	"excludeReason": "Dead"	
 }
