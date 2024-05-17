@@ -2,5 +2,7 @@
 	"url": "http://www.getmyipaddress.info/",
 	"title": "Get my IP address",
 	"description": "Get my IP address retrieves and displays automatically our visitors IP address. We also have a short tutorial on how to get your IP address manually for various Operating Systems.",
-	"launchDate": "2010-01-15"
+	"launchDate": "2010-01-15",
+	"excludeFromList": true,
+	"excludeReason": "Dead"
 }
