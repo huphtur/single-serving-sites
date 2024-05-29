@@ -1,29 +1,77 @@
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: OmgiliBot
-Disallow: /
-
-User-agent: The Knowledge AI
-Disallow: /
-
-User-agent: FacebookBot
-Disallow: /
+# AI Search Crawler
+# https://darkvisitors.com/agents/amazonbot
 
 User-agent: Amazonbot
 Disallow: /
 
-User-agent: Claude-Web
+# AI Search Crawler
+# https://darkvisitors.com/agents/applebot
+
+User-agent: Applebot
 Disallow: /
 
-User-agent: cohere-ai
+# AI Data Scraper
+# https://darkvisitors.com/agents/bytespider
+
+User-agent: Bytespider
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/ccbot
+
+User-agent: CCBot
+Disallow: /
+
+# AI Assistant
+# https://darkvisitors.com/agents/chatgpt-user
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/claudebot
+
+User-agent: ClaudeBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/diffbot
+
+User-agent: Diffbot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/facebookbot
+
+User-agent: FacebookBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/google-extended
+
+User-agent: Google-Extended
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/gptbot
+
+User-agent: GPTBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/omgili
+
+User-agent: omgili
+Disallow: /
+
+# AI Search Crawler
+# https://darkvisitors.com/agents/perplexitybot
+
+User-agent: PerplexityBot
+Disallow: /
+
+# AI Search Crawler
+# https://darkvisitors.com/agents/youbot
+
+User-agent: YouBot
 Disallow: /
