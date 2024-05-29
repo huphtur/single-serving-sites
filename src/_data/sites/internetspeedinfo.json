@@ -2,5 +2,7 @@
 	"url": "http://www.internetspeed.info/",
 	"title": "Simple Internet Speed Test",
 	"description": "Simple internet speed test is an online tool to test Your current internet connection speed.",
-	"launchDate": "2019-10-08"
+	"launchDate": "2019-10-08",
+	"excludeFromList": true,
+	"excludeReason": "Site is ad-ridden and click-jacking."
 }
