@@ -4,5 +4,7 @@
 	"description": "Cumming or Drumming? Choose hard and fast before the truth explodes in your face.",
 	"launchDate": "2014-11-08",
 	"author": "Marcus Johnston",
-	"authorSite": "https://www.marcusjohnston.com/"
+	"authorSite": "https://www.marcusjohnston.com/",
+	"excludeFromList": true,
+	"excludeReason": "Dead"
 }
