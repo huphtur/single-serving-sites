@@ -1,10 +1,8 @@
 {
 	"url": "http://www.thedailynice.com/",
 	"title": "The Daily Nice",
-	"description": "The Daily Nice is about my enthusiasm for looking and being. Every day I show a photograph of something that made me happy - Jason Evans",
+	"description": "Every day I show a photograph of something that made me happy - Jason Evans",
 	"launchDate": "2004-10-25",
 	"author": "Jason Evans",
-	"authorSite": "https://jasonevans.info/",
-	"excludeFromList": true,
-	"excludeReason": "Dead"
+	"authorSite": "https://jasonevans.info/"
 }
