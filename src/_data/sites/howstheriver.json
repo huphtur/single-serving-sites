@@ -4,5 +4,7 @@
 	"description": "Showing the current swimming conditions in the Willamette River in Portland, Oregon. ",
 	"launchDate": "2017-05-15",
 	"author": "Ride Report",
-	"authorSite": "https://www.ridereport.com/"
+	"authorSite": "https://www.ridereport.com/",
+	"excludeFromList": true,
+	"excludeReason": "Dead"	
 }
