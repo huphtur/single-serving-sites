@@ -1,0 +1,8 @@
+{
+	"url": "http://segmentation.network/",
+	"title": "Segmentation Network",
+	"description": "Over 600.000 segmentations manually created by crowd workers for Microsoft's COCO dataset. The dataset is used in machine learning for training and testing.",
+	"launchDate": "2016-03-07",
+	"author": "Sebastian Schmieg",
+	"authorSite": "https://sebastianschmieg.com/"
+}
