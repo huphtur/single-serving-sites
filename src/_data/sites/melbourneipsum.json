@@ -4,5 +4,7 @@
 	"description": "Melbourne Ipsum is a free online tool to generate random lorem ipsum text with a Melbourne theme. Made for the benefit of Melbourne's design community.",
 	"launchDate": "2012-08-22",
 	"author": "Hath Designs",
-	"authorSite": "https://www.hathdesigns.com/"
+	"authorSite": "https://www.hathdesigns.com/",
+	"excludeFromList": true,
+	"excludeReason": "Server not found"	
 }
