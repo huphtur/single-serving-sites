@@ -3,5 +3,7 @@
 	"title": "RamenHaus",
 	"launchDate": "2023-09-17",
 	"author": "Ole Reißmann",
-	"authorSite": "https://olereissmann.de/"
+	"authorSite": "https://olereissmann.de/",
+	"excludeFromList": true,
+	"excludeReason": "402 Payment Required"
 }
