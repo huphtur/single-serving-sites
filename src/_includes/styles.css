@@ -111,7 +111,7 @@ code {
 	letter-spacing: -.025rem;
 	order: 2;
 	justify-content: space-between;
-	margin: .75rem .75rem .25rem;
+	margin: .25rem .75rem;
 	font-size: small;
 	display: flex;
 }
