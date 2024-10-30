@@ -12,6 +12,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "html-minifier-terser": "^7.2.0",
-    "list.js-fixed": "^2.3.5"
+    "list.js-fixed": "^2.3.7"
   }
 }
