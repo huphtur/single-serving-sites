@@ -3,5 +3,7 @@
 	"title": "deep sadness",
 	"launchDate": "2014-01-11",
 	"author": "Rafaël Rozendaal",
-	"authorSite": "https://www.newrafael.com/"
+	"authorSite": "https://www.newrafael.com/",
+	"excludeFromList": true,
+	"excludeReason": "Too many redirections"
 }

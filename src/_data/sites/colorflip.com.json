@@ -3,5 +3,7 @@
 	"title": "color flip",
 	"launchDate": "2008-03-10",
 	"author": "Rafaël Rozendaal",
-	"authorSite": "https://www.newrafael.com/"
+	"authorSite": "https://www.newrafael.com/",
+	"excludeFromList": true,
+	"excludeReason": "404 Not Found"			
 }

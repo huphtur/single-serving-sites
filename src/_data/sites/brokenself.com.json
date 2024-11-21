@@ -3,5 +3,7 @@
 	"title": "broken self",
 	"launchDate": "2007-10-22",
 	"author": "Rafaël Rozendaal",
-	"authorSite": "https://www.newrafael.com/"
+	"authorSite": "https://www.newrafael.com/",
+	"excludeFromList": true,
+	"excludeReason": "Too many redirections"		
 }

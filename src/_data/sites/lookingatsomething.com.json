@@ -3,5 +3,7 @@
 	"title": "looking at something",
 	"launchDate": "2013-03-11",
 	"author": "Rafaël Rozendaal",
-	"authorSite": "https://www.newrafael.com/"
+	"authorSite": "https://www.newrafael.com/",
+	"excludeFromList": true,
+	"excludeReason": "Too many redirections"	
 }

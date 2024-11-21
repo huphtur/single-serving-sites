@@ -3,5 +3,7 @@
 	"title": "Random Selection in Random Image",
 	"launchDate": "2012-12-04",
 	"author": "Jan Robert Leegte",
-	"authorSite": "https://www.leegte.org/"
+	"authorSite": "https://www.leegte.org/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server name or address could not be resolved."		
 }
