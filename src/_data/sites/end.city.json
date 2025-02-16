@@ -1,5 +1,7 @@
 {
 	"url": "https://end.city/",
 	"title": "FX RUINS",
-	"launchDate": "2020-11-01"
+	"launchDate": "2020-11-01",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server returned an invalid or unrecognized response "
 }

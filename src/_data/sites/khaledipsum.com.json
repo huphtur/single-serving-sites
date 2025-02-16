@@ -3,5 +3,7 @@
 	"title": "Khaled Ipsum",
 	"description": "Generate major keys to success with Khaled Ipsum, the best DJ Khaled Lorem Ipsum placeholder text generator. Bless up.",
 	"launchDate": "2016-02-04",
-	"author": "Patrick Wong"
+	"author": "Patrick Wong",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server returned an invalid or unrecognized response "
 }

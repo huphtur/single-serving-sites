@@ -1,5 +1,7 @@
 {
 	"url": "http://www.amialright.com/",
 	"title": "Am I Alright?",
-	"launchDate": "2014-05-17"
+	"launchDate": "2014-05-17",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server returned an invalid or unrecognized response "
 }

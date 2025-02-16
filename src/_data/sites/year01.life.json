@@ -4,5 +4,7 @@
 	"description": "Year 01 — A text based game. Guided by poetic text messages, the players subject themselves to dystopian, uncanny, and hopeful scenarios and go through altered states of consciousness.",
 	"launchDate": "2020-10-31",
 	"author": "Jonas Lund",
-	"authorSite": "https://jonaslund.biz"
+	"authorSite": "https://jonaslund.biz",
+	"excludeFromList": true,
+	"excludeReason": "502 Bad Gateway"
 }

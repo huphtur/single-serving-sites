@@ -4,5 +4,7 @@
 	"description": "A visualisation of the number one million.",
 	"launchDate": "2013-08-01",
 	"author": "Brock Kenzler",
-	"authorSite": "http://brockkenzler.com/"
+	"authorSite": "http://brockkenzler.com/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server returned an invalid or unrecognized response "
 }
