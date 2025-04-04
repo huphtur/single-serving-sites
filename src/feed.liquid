@@ -1,0 +1,32 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Single-Serving Sites</title>
+  <subtitle>Listing all the cool single-serving sites on the internets.</subtitle>
+  <link href="https://singleservingsites.cool/feed.xml" rel="self"/>
+  <link href="https://singleservingsites.cool/"/>
+  <updated>{{ "now" | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <id>https://singleservingsites.cool/</id>
+  <author>
+    <name>Marcel Appelman</name>
+  </author>
+  {%- assign sortedsites = sites | values | sort: "launchDate" | reverse -%}
+  {%- for site in sortedsites limit:20 -%}
+  {%- unless site.excludeFromList %}
+  <entry>
+    <title>{{ site.title | escape }}</title>
+    <link href="{{ site.url }}"/>
+    <updated>{{ site.launchDate | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+    <id>{{ site.url }}</id>
+    <content type="html">
+      &lt;p&gt;&lt;img src="https://singleservingsites.cool/img/{{ site.url | domainify }}.avif" alt="{{ site.title }}" /&gt;&lt;/p&gt;
+      {% if site.description %}&lt;p&gt;{{ site.description | escape }}&lt;/p&gt;{% endif %}
+      {% if site.author %}&lt;p&gt;by {{ site.author | escape }}{% if site.authorSite %} (&lt;a href="{{ site.authorSite }}"&gt;website&lt;/a&gt;){% endif %}&lt;/p&gt;{% endif %}
+    </content>
+  </entry>
+  {%- endunless -%}
+  {%- endfor %}
+</feed>
