@@ -1,10 +1,10 @@
 {
-	"url": "https://dangitgit.com",
+	"url": "https://dangitgit.com/",
 	"title": "Dangit, Git!?!",
 	"description": "Git is hard: messing up is easy, and figuring out how to fix your mistakes is impossible.",
 	"launchDate": "2017-09-04",
 	"author": "Katie Sylor-Miller",
-	"authorSite": "https://sylormiller.com",
+	"authorSite": "https://sylormiller.com/",
 	"excludeFromList": true,
 	"excludeReason": "ads"	
 }
