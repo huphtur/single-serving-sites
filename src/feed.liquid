@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
     <updated>{{ site.launchDate | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
     <id>{{ site.url }}</id>
     <content type="html">
-      &lt;p&gt;&lt;img src="https://singleservingsites.cool/img/{{ site.url | domainify }}.avif" alt="{{ site.title }}" /&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src="https://singleservingsites.cool/img/{{ site.url | domainify }}.avif" alt /&gt;&lt;/p&gt;
       {% if site.description %}&lt;p&gt;{{ site.description | escape }}&lt;/p&gt;{% endif %}
       {% if site.author %}&lt;p&gt;by {% if site.authorSite %}&lt;a href="{{ site.authorSite }}"&gt;{{ site.author | escape }}&lt;/a&gt;{% else %}{{ site.author | escape }}{% endif %}&lt;/p&gt;{% endif %}
     </content>
