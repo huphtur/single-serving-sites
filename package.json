@@ -3,7 +3,8 @@
   "description": "Single-Serving Sites",
   "scripts": {
     "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet",
-    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy"
+    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy",
+    "check-urls": "node check-urls.js"
   },
   "keywords": [],
   "author": "Marcel Appelman",
