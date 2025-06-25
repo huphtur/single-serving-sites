@@ -11,7 +11,7 @@
   "license": "MIT",
   "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.1",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "html-minifier-terser": "^7.2.0",
     "list.js-fixed": "^2.3.7"
