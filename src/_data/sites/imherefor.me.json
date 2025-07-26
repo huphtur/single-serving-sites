@@ -4,5 +4,7 @@
 	"description": "Don't leave or you'll lose your spot.",
 	"launchDate": "2022-03-15",
 	"author": "Michael Hoffman",
-	"authorSite": "https://michaelshoffman.com/"
+	"authorSite": "https://michaelshoffman.com/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: A connection with the server could not be established"	
 }

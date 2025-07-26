@@ -2,5 +2,7 @@
 	"url": "https://www.hardcoreprawnlawn.com/",
 	"title": "Hardcore Prawn Lawn",
 	"launchDate": "2015-06-16",
-	"author": "Darren"
+	"author": "Darren",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: A connection with the server could not be established"	
 }

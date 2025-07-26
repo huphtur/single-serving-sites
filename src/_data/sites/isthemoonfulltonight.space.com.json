@@ -3,5 +3,7 @@
 	"title": "Is The Moon Full Tonight?",
 	"launchDate": "2024-08-19",
 	"author": "Captain Dan",
-	"authorSite": "https://govorenefekt.com/"
+	"authorSite": "https://govorenefekt.com/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server name or address could not be resolved"
 }

@@ -2,5 +2,7 @@
 	"url": "https://stoop.dog/",
 	"title": "internet stoop",
 	"description": "FREE TO TAKE",
-	"launchDate": "2000-04-02"
+	"launchDate": "2000-04-02",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server name or address could not be resolved"		
 }

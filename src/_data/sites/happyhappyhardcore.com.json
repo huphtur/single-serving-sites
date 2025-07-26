@@ -3,5 +3,7 @@
 	"title": "happy happy hardcore",
 	"launchDate": "2014-05-17",
 	"author": "Tara Sinn",
-	"authorSite": "https://tara-sinn.com/"
+	"authorSite": "https://tara-sinn.com/",
+	"excludeFromList": true,
+	"excludeReason": "403 Forbidden"
 }

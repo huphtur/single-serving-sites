@@ -3,5 +3,7 @@
 	"title": "Tim Walz Fixed Your Bicycle",
 	"launchDate": "2024-08-07",
 	"author": "Jason Cosper",
-	"authorSite": "https://jasoncosper.com/"
+	"authorSite": "https://jasoncosper.com/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Timeout"
 }

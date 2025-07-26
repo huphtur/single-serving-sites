@@ -4,5 +4,7 @@
 	"description": "A fundamental design principle for techno optimists. How we need to move towards friction in digital culture.",
 	"launchDate": "2023-06-05",
 	"author": "Moniker",
-	"authorSite": "https://studiomoniker.com/"
+	"authorSite": "https://studiomoniker.com/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The date in the certificate is invalid or has expired"
 }

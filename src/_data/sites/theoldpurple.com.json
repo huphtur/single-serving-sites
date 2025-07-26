@@ -1,5 +1,7 @@
 {
 	"url": "http://theoldpurple.com/",
 	"title": "Purple",
-	"launchDate": "2018-05-19"
+	"launchDate": "2018-05-19",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: A connection with the server could not be established"	
 }

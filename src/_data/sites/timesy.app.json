@@ -2,5 +2,7 @@
 	"url": "https://timesy.app/",
 	"title": "Timesy: A Distraction-Free Online Timer",
 	"launchDate": "2024-05-10",
-	"author": "MAZE ✧"
+	"author": "MAZE ✧",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: The server name or address could not be resolved"
 }

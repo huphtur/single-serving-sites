@@ -2,5 +2,7 @@
 	"url": "http://www.thebestdinosaur.com/",
 	"title": "The Best Dinosaur",
 	"description": "Stegosaurus is the best dinosaur.",
-	"launchDate": "2008-01-30"
+	"launchDate": "2008-01-30",
+	"excludeFromList": true,
+	"excludeReason": "500 Internal Server Error"		
 }

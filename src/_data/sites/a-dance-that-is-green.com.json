@@ -3,5 +3,7 @@
 	"title": "Three Spectrums: N° 1 to 200",
 	"launchDate": "2020-10-21",
 	"author": "Muaz Khan ",
-	"authorSite": "https://muazkhan.com/"
+	"authorSite": "https://muazkhan.com/",
+	"excludeFromList": true,
+	"excludeReason": "-1 Not found: A connection with the server could not be established"	
 }
