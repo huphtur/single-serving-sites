@@ -17,6 +17,7 @@ Contributors        Shiv Jha-Mathur
                           Andy Baio
                        Stefan Grund
                     Shalanah Dawson
+                     Terkel Gjervig
 
 .           .           .            
 |           |           |            
