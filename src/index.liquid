@@ -112,6 +112,10 @@
           {%- endunless -%}
         {%- endfor %}
       </ol>
+      <p class="hidden">Sorry, no more sites found. You can
+        <a href="https://github.com/huphtur/single-serving-sites">add one</a>
+        if you want.
+      </p>
       <small>{{ counter }} Total sites listed. Last updated: {{ "now" | date: "%B %e, %Y" }}.</small>
     </main>
     <script>
@@ -135,16 +139,23 @@
       	// Infinite scroll state
       	let renderCount = 0;
       	const BATCH = 20;
-      	function renderBatch(reset = false) {
-      		if (reset) {
-      			list.innerHTML = '';
-      			renderCount = 0;
-      		}
-      		const toShow = data.slice(0, renderCount + BATCH);
-      		list.innerHTML = '';
-      		toShow.forEach(d => list.appendChild(d.el));
-      		renderCount = toShow.length;
-      	}
+        // Show/hide 'no results' message
+        const noResultsMsg = document.querySelector('p.hidden');
+        function renderBatch(reset = false) {
+         if (reset) {
+          list.innerHTML = '';
+          renderCount = 0;
+         }
+         const toShow = data.slice(0, renderCount + BATCH);
+         list.innerHTML = '';
+         toShow.forEach(d => list.appendChild(d.el));
+         renderCount = toShow.length;
+         if (data.length === 0) {
+          noResultsMsg.classList.remove('hidden');
+         } else {
+          noResultsMsg.classList.add('hidden');
+         }
+        }
 
       	// Infinite scroll handler
       	function onScroll() {
