@@ -1,4 +1,5 @@
-.no-js .lazy {
+.no-js .lazy,
+.hidden {
 	display: none;
 }
 
