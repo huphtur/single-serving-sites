@@ -1,10 +1,7 @@
-
 const htmlmin = require("html-minifier-terser");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-module.exports = async function (eleventyConfig) {
-  // Dynamically import the ESM plugin
-  const pluginRss = (await import("@11ty/eleventy-plugin-rss")).default;
-
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPassthroughCopy("src/bundle.css");
